@@ -3,4 +3,5 @@ def sum_of_lists(N):
     for i in range(5):
         L = [j ^ (j >> i) for j in range(N)]
         total += sum(L)
+		del L
     return total
